@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		512596AE2982A187008BACF5 /* CoffeeStylesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512596AD2982A187008BACF5 /* CoffeeStylesViewController.swift */; };
+		51AAD63529810549002EA002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD63429810549002EA002 /* AppDelegate.swift */; };
+		51AAD63729810549002EA002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD63629810549002EA002 /* SceneDelegate.swift */; };
+		51AAD63929810549002EA002 /* MachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD63829810549002EA002 /* MachineViewController.swift */; };
+		51AAD63C29810549002EA002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAD63A29810549002EA002 /* Main.storyboard */; };
+		51AAD63F29810549002EA002 /* RubikaAssessment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD63D29810549002EA002 /* RubikaAssessment.xcdatamodeld */; };
+		51AAD6412981054C002EA002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51AAD6402981054C002EA002 /* Assets.xcassets */; };
+		51AAD6442981054C002EA002 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAD6422981054C002EA002 /* LaunchScreen.storyboard */; };
+		51AAD6522981117D002EA002 /* CoffeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD6512981117D002EA002 /* CoffeeService.swift */; };
+		51AAD65429812A73002EA002 /* CoffeeServiceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD65329812A73002EA002 /* CoffeeServiceDataModel.swift */; };
+		51AAD65929817AC7002EA002 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD65829817AC7002EA002 /* ItemsTableViewCell.swift */; };
+		51AAD65B29818002002EA002 /* ModelObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD65A29818002002EA002 /* ModelObjects.swift */; };
+		51AAD65D298185F8002EA002 /* CoffeeSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD65C298185F8002EA002 /* CoffeeSizeViewController.swift */; };
+		51AAD65F29819840002EA002 /* CoffeeExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD65E29819840002EA002 /* CoffeeExtraViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		512596AD2982A187008BACF5 /* CoffeeStylesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeStylesViewController.swift; sourceTree = "<group>"; };
+		51AAD63129810549002EA002 /* RubikaAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubikaAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AAD63429810549002EA002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51AAD63629810549002EA002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		51AAD63829810549002EA002 /* MachineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineViewController.swift; sourceTree = "<group>"; };
+		51AAD63B29810549002EA002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51AAD63E29810549002EA002 /* RubikaAssessment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RubikaAssessment.xcdatamodel; sourceTree = "<group>"; };
+		51AAD6402981054C002EA002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51AAD6432981054C002EA002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51AAD6452981054C002EA002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51AAD6512981117D002EA002 /* CoffeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeService.swift; sourceTree = "<group>"; };
+		51AAD65329812A73002EA002 /* CoffeeServiceDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeServiceDataModel.swift; sourceTree = "<group>"; };
+		51AAD65829817AC7002EA002 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
+		51AAD65A29818002002EA002 /* ModelObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelObjects.swift; sourceTree = "<group>"; };
+		51AAD65C298185F8002EA002 /* CoffeeSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSizeViewController.swift; sourceTree = "<group>"; };
+		51AAD65E29819840002EA002 /* CoffeeExtraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeExtraViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51AAD62E29810549002EA002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51AAD62829810549002EA002 = {
+			isa = PBXGroup;
+			children = (
+				51AAD63329810549002EA002 /* RubikaAssessment */,
+				51AAD63229810549002EA002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51AAD63229810549002EA002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD63129810549002EA002 /* RubikaAssessment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51AAD63329810549002EA002 /* RubikaAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD64B29810CAB002EA002 /* AppDelegate */,
+				51AAD64C29810CCB002EA002 /* Controllers */,
+				51AAD64F29810D6A002EA002 /* Models */,
+				51AAD65029810FD4002EA002 /* ModelViews */,
+				51AAD64D29810CE1002EA002 /* Resources */,
+				51AAD64E29810CFC002EA002 /* Views */,
+				51AAD6452981054C002EA002 /* Info.plist */,
+				51AAD63D29810549002EA002 /* RubikaAssessment.xcdatamodeld */,
+			);
+			path = RubikaAssessment;
+			sourceTree = "<group>";
+		};
+		51AAD64B29810CAB002EA002 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD63429810549002EA002 /* AppDelegate.swift */,
+				51AAD63629810549002EA002 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		51AAD64C29810CCB002EA002 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD63829810549002EA002 /* MachineViewController.swift */,
+				512596AD2982A187008BACF5 /* CoffeeStylesViewController.swift */,
+				51AAD65C298185F8002EA002 /* CoffeeSizeViewController.swift */,
+				51AAD65E29819840002EA002 /* CoffeeExtraViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		51AAD64D29810CE1002EA002 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD6402981054C002EA002 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		51AAD64E29810CFC002EA002 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD65729817A6E002EA002 /* Cells */,
+				51AAD6422981054C002EA002 /* LaunchScreen.storyboard */,
+				51AAD63A29810549002EA002 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51AAD64F29810D6A002EA002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD65329812A73002EA002 /* CoffeeServiceDataModel.swift */,
+				51AAD65A29818002002EA002 /* ModelObjects.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51AAD65029810FD4002EA002 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD6512981117D002EA002 /* CoffeeService.swift */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		51AAD65729817A6E002EA002 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				51AAD65829817AC7002EA002 /* ItemsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51AAD63029810549002EA002 /* RubikaAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51AAD6482981054C002EA002 /* Build configuration list for PBXNativeTarget "RubikaAssessment" */;
+			buildPhases = (
+				51AAD62D29810549002EA002 /* Sources */,
+				51AAD62E29810549002EA002 /* Frameworks */,
+				51AAD62F29810549002EA002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RubikaAssessment;
+			productName = RubikaAssessment;
+			productReference = 51AAD63129810549002EA002 /* RubikaAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51AAD62929810549002EA002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					51AAD63029810549002EA002 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 51AAD62C29810549002EA002 /* Build configuration list for PBXProject "RubikaAssessment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51AAD62829810549002EA002;
+			productRefGroup = 51AAD63229810549002EA002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51AAD63029810549002EA002 /* RubikaAssessment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51AAD62F29810549002EA002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51AAD6442981054C002EA002 /* LaunchScreen.storyboard in Resources */,
+				51AAD6412981054C002EA002 /* Assets.xcassets in Resources */,
+				51AAD63C29810549002EA002 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51AAD62D29810549002EA002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512596AE2982A187008BACF5 /* CoffeeStylesViewController.swift in Sources */,
+				51AAD65B29818002002EA002 /* ModelObjects.swift in Sources */,
+				51AAD65929817AC7002EA002 /* ItemsTableViewCell.swift in Sources */,
+				51AAD63929810549002EA002 /* MachineViewController.swift in Sources */,
+				51AAD65429812A73002EA002 /* CoffeeServiceDataModel.swift in Sources */,
+				51AAD63F29810549002EA002 /* RubikaAssessment.xcdatamodeld in Sources */,
+				51AAD65D298185F8002EA002 /* CoffeeSizeViewController.swift in Sources */,
+				51AAD63529810549002EA002 /* AppDelegate.swift in Sources */,
+				51AAD63729810549002EA002 /* SceneDelegate.swift in Sources */,
+				51AAD65F29819840002EA002 /* CoffeeExtraViewController.swift in Sources */,
+				51AAD6522981117D002EA002 /* CoffeeService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		51AAD63A29810549002EA002 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51AAD63B29810549002EA002 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51AAD6422981054C002EA002 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51AAD6432981054C002EA002 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51AAD6462981054C002EA002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		51AAD6472981054C002EA002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51AAD6492981054C002EA002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RubikaAssessment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASafari.RubikaAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51AAD64A2981054C002EA002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RubikaAssessment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ASafari.RubikaAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51AAD62C29810549002EA002 /* Build configuration list for PBXProject "RubikaAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51AAD6462981054C002EA002 /* Debug */,
+				51AAD6472981054C002EA002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51AAD6482981054C002EA002 /* Build configuration list for PBXNativeTarget "RubikaAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51AAD6492981054C002EA002 /* Debug */,
+				51AAD64A2981054C002EA002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		51AAD63D29810549002EA002 /* RubikaAssessment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				51AAD63E29810549002EA002 /* RubikaAssessment.xcdatamodel */,
+			);
+			currentVersion = 51AAD63E29810549002EA002 /* RubikaAssessment.xcdatamodel */;
+			path = RubikaAssessment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 51AAD62929810549002EA002 /* Project object */;
+}
