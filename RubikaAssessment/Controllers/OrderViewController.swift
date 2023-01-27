@@ -73,6 +73,29 @@ class OrderViewController: UIViewController {
         }
         return ""
     }
+    
+    private func getImage(coffeeName: String) -> UIImage {
+        switch coffeeName {
+        case "Large":
+            return UIImage(named: "large.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Venti":
+            return UIImage(named: "venti.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Tall":
+            return UIImage(named: "tall.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Espresso":
+            return UIImage(named: "espresso 1.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Cappuccino":
+            return UIImage(named: "cappuccino 1.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Ristretto":
+            return UIImage(named: "ristretto 1.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Milk":
+            return UIImage(named: "milk.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Sugar":
+            return UIImage(named: "sugar.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        default:
+            return UIImage(systemName: "photo.on.rectangle.fill")!
+        }
+    }
 }
 
 
@@ -105,7 +128,9 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemsTableViewCell
-        cell.itemTitleLabel.text = getTableViewData(for: x, id: itemsDictionary[x] ?? "")
+        let rowName = getTableViewData(for: x, id: itemsDictionary[x] ?? "")
+        cell.itemTitleLabel.text = rowName
+        cell.itemIcon.image = getImage(coffeeName: rowName)
         return cell
     }
 
