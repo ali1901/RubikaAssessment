@@ -43,6 +43,16 @@ class ExtraTableViewCell: UITableViewCell {
     private func postNotification(with data: [String: String]) {
         NotificationCenter.default.post(name: NSNotification.Name("extraItem"), object: nil, userInfo: data)
     }
+    
+    private func getExtraItemName(name: String) -> String {
+        if name.localizedStandardContains("milk") {
+            return "milk"
+        } else if name.localizedStandardContains("sugar") {
+            return "sugar"
+        } else {
+            return "extra"
+        }
+    }
 }
 
 extension ExtraTableViewCell: UITableViewDelegate, UITableViewDataSource {
@@ -64,9 +74,9 @@ extension ExtraTableViewCell: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let itemName = coffeeExtra?.name
+        let itemName = getExtraItemName(name: coffeeExtra?.name ?? "")
         let itemID = coffeeExtra?.subselections[indexPath.row].id
-        postNotification(with: [itemName ?? "" : itemID ?? ""])
+        postNotification(with: [itemName : itemID ?? ""])
         selectedItem = indexPath.row
         tableView.reloadData()
     }
