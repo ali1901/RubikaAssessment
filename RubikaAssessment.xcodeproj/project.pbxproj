@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51016C5D298483B2004B60F2 /* DiskCareTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51016C5C298483B2004B60F2 /* DiskCareTaker.swift */; };
 		512596AE2982A187008BACF5 /* CoffeeStylesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512596AD2982A187008BACF5 /* CoffeeStylesViewController.swift */; };
 		516EEDE12983C42E00B39490 /* ExtraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EEDE02983C42E00B39490 /* ExtraTableViewCell.swift */; };
 		516EEDE32983E9ED00B39490 /* EmbededTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EEDE22983E9ED00B39490 /* EmbededTableViewCell.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51016C5C298483B2004B60F2 /* DiskCareTaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCareTaker.swift; sourceTree = "<group>"; };
 		512596AD2982A187008BACF5 /* CoffeeStylesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeStylesViewController.swift; sourceTree = "<group>"; };
 		516EEDE02983C42E00B39490 /* ExtraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraTableViewCell.swift; sourceTree = "<group>"; };
 		516EEDE22983E9ED00B39490 /* EmbededTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbededTableViewCell.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51016C592984825C004B60F2 /* CareTakers */ = {
+			isa = PBXGroup;
+			children = (
+				51016C5C298483B2004B60F2 /* DiskCareTaker.swift */,
+			);
+			path = CareTakers;
+			sourceTree = "<group>";
+		};
 		51AAD62829810549002EA002 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		51AAD63329810549002EA002 /* RubikaAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				51016C592984825C004B60F2 /* CareTakers */,
 				51AAD64B29810CAB002EA002 /* AppDelegate */,
 				51AAD64C29810CCB002EA002 /* Controllers */,
 				51AAD64F29810D6A002EA002 /* Models */,
@@ -236,6 +247,7 @@
 				51AAD65429812A73002EA002 /* CoffeeServiceDataModel.swift in Sources */,
 				51AAD63F29810549002EA002 /* RubikaAssessment.xcdatamodeld in Sources */,
 				51AAD65D298185F8002EA002 /* CoffeeSizeViewController.swift in Sources */,
+				51016C5D298483B2004B60F2 /* DiskCareTaker.swift in Sources */,
 				51AAD63529810549002EA002 /* AppDelegate.swift in Sources */,
 				51AAD63729810549002EA002 /* SceneDelegate.swift in Sources */,
 				51AAD65F29819840002EA002 /* CoffeeExtraViewController.swift in Sources */,

@@ -51,13 +51,13 @@ class MachineViewController: UIViewController {
             } else {
                 switch response.errorType {
                 case .parseJson:
-                    print("Couldn't ")
+                    print("Couldn't parse the data, Try again later.")
                 case .connectToServer:
                     print("Couldn't connect to server, Check your Internet.")
                 case .nilResponse:
                     print("No coffes availible at the moment. Try Again later.")
                 case .none:
-                    print("-")
+                    print("")
                 }
             }
         }

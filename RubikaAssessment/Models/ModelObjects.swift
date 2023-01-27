@@ -22,7 +22,7 @@ enum ResponseError {
 
 struct MagicNumbers {
     static var tableViewCornerRadios: CGFloat = 5
-    static var tableViewCellHight: CGFloat = 90
+    static var tableViewCellHight: CGFloat = 100
     static var embededTableViewCellHight: CGFloat = 50
 }
 

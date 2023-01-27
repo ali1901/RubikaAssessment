@@ -12,6 +12,7 @@ class OrderViewController: UIViewController {
     @IBOutlet weak var overviewTableView: UITableView!
     @IBOutlet weak var orderBtn: UIButton!
     
+    let coffeeService = CoffeeService()
     var coffees: CoffeeServiceDataModel!
     var chosenCoffee: CoffeeType!
     var coffeeOrder: CoffeeOrder!
@@ -20,19 +21,22 @@ class OrderViewController: UIViewController {
     var isSubItem = false
     var milkItemAdded = false
     var sugarItemAdded = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         overviewTableView.delegate = self
         overviewTableView.dataSource = self
+        overviewTableView.register(EmbededTableViewCell.self, forCellReuseIdentifier: "cell")
+        overviewTableView.separatorColor = .white
+        overviewTableView.layer.cornerRadius = MagicNumbers.tableViewCornerRadios
         
         orderBtn.layer.cornerRadius = MagicNumbers.tableViewCornerRadios
         
         makeArrayOfItems(order: coffeeOrder)
-        overviewTableView.register(EmbededTableViewCell.self, forCellReuseIdentifier: "cell")
-        overviewTableView.separatorColor = .white
     }
     
+    //MARK: - Funcs
     private func makeArrayOfItems(order: CoffeeOrder) {
         itemsDictionary["type"] = order.type
         itemsDictionary["size"] = order.size
@@ -96,6 +100,16 @@ class OrderViewController: UIViewController {
             return UIImage(systemName: "photo.on.rectangle.fill")!
         }
     }
+    
+    //MARK: - IBActions
+    @IBAction func orderBtnTapped(_ sender: UIButton) {
+        print("Coffee Ordered...")
+        coffeeService.orderCoffee(order: coffeeOrder) { response in
+            if response.error == false {
+                //TODO: Parsing order response
+            }
+        }
+    }
 }
 
 
@@ -135,7 +149,7 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return MagicNumbers.tableViewCellHight
+        return MagicNumbers.tableViewCellHight-20
     }
     
 }

@@ -81,7 +81,7 @@
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="kLt-fw-kPl">
                                                             <rect key="frame" x="8" y="5.6666666666666643" width="60" height="59.999999999999993"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.3294117647" green="0.50980392159999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="Pfo-9Z-SLZ"/>
                                                                 <constraint firstAttribute="width" constant="60" id="fcG-9F-tTo"/>
@@ -179,7 +179,7 @@
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="5C0-Ap-d5v">
                                                             <rect key="frame" x="10" y="5.6666666666666643" width="60" height="59.999999999999993"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.3294117647" green="0.50980392159999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="1xA-nv-t7k"/>
                                                                 <constraint firstAttribute="width" secondItem="5C0-Ap-d5v" secondAttribute="height" multiplier="1:1" id="xWl-0G-xPp"/>
@@ -268,9 +268,9 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="500" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-EU-sQy">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-EU-sQy">
                                                             <rect key="frame" x="10" y="5" width="60" height="60"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.3294117647" green="0.50980392159999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="NV2-wW-WbH"/>
                                                                 <constraint firstAttribute="width" secondItem="4lJ-EU-sQy" secondAttribute="height" multiplier="1:1" id="Oja-Yr-4ev"/>
@@ -398,7 +398,7 @@
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="baY-yd-Z0q">
                                                             <rect key="frame" x="10" y="5.6666666666666643" width="60" height="59.999999999999993"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.3294117647" green="0.50980392159999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="baY-yd-Z0q" secondAttribute="height" multiplier="1:1" id="0V2-rC-WPC"/>
                                                                 <constraint firstAttribute="height" constant="60" id="X2k-zS-STP"/>
@@ -442,6 +442,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="orderBtnTapped:" destination="lJT-Rr-urw" eventType="touchUpInside" id="Kkx-6V-5XG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mNq-Wn-2cI"/>
@@ -494,7 +497,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="check" width="128" height="128"/>
         <image name="checkmark.seal" catalog="system" width="128" height="124"/>
         <image name="machine" width="269" height="322"/>
         <systemColor name="labelColor">
