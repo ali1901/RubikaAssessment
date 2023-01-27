@@ -45,13 +45,13 @@ class CoffeeSizeViewController: UIViewController {
     private func getImage(coffeeName: String) -> UIImage {
         switch coffeeName {
         case "Large":
-            return UIImage(named: "small.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
-        case "Venti":
-            return UIImage(named: "medium.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
-        case "Tall":
             return UIImage(named: "large.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Venti":
+            return UIImage(named: "venti.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+        case "Tall":
+            return UIImage(named: "tall.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
         default:
-            return UIImage(named: "medium.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
+            return UIImage(named: "large.png") ?? UIImage(systemName: "photo.on.rectangle.fill")!
         }
     }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		512596AE2982A187008BACF5 /* CoffeeStylesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512596AD2982A187008BACF5 /* CoffeeStylesViewController.swift */; };
+		516EEDE12983C42E00B39490 /* ExtraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EEDE02983C42E00B39490 /* ExtraTableViewCell.swift */; };
+		516EEDE32983E9ED00B39490 /* EmbededTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EEDE22983E9ED00B39490 /* EmbededTableViewCell.swift */; };
 		51AAD63529810549002EA002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD63429810549002EA002 /* AppDelegate.swift */; };
 		51AAD63729810549002EA002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD63629810549002EA002 /* SceneDelegate.swift */; };
 		51AAD63929810549002EA002 /* MachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD63829810549002EA002 /* MachineViewController.swift */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		512596AD2982A187008BACF5 /* CoffeeStylesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeStylesViewController.swift; sourceTree = "<group>"; };
+		516EEDE02983C42E00B39490 /* ExtraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraTableViewCell.swift; sourceTree = "<group>"; };
+		516EEDE22983E9ED00B39490 /* EmbededTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbededTableViewCell.swift; sourceTree = "<group>"; };
 		51AAD63129810549002EA002 /* RubikaAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubikaAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AAD63429810549002EA002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51AAD63629810549002EA002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				51AAD65829817AC7002EA002 /* ItemsTableViewCell.swift */,
+				516EEDE02983C42E00B39490 /* ExtraTableViewCell.swift */,
+				516EEDE22983E9ED00B39490 /* EmbededTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 			files = (
 				512596AE2982A187008BACF5 /* CoffeeStylesViewController.swift in Sources */,
 				51AAD65B29818002002EA002 /* ModelObjects.swift in Sources */,
+				516EEDE12983C42E00B39490 /* ExtraTableViewCell.swift in Sources */,
 				51AAD65929817AC7002EA002 /* ItemsTableViewCell.swift in Sources */,
 				51AAD63929810549002EA002 /* MachineViewController.swift in Sources */,
 				51AAD65429812A73002EA002 /* CoffeeServiceDataModel.swift in Sources */,
@@ -228,6 +235,7 @@
 				51AAD63529810549002EA002 /* AppDelegate.swift in Sources */,
 				51AAD63729810549002EA002 /* SceneDelegate.swift in Sources */,
 				51AAD65F29819840002EA002 /* CoffeeExtraViewController.swift in Sources */,
+				516EEDE32983E9ED00B39490 /* EmbededTableViewCell.swift in Sources */,
 				51AAD6522981117D002EA002 /* CoffeeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
