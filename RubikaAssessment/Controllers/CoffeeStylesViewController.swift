@@ -13,6 +13,7 @@ class CoffeeStylesViewController: UIViewController {
     
     var coffees: CoffeeServiceDataModel!
     var chosenCoffee: CoffeeType?
+    var coffeeOrder = CoffeeOrder(type: "", size: "", extra: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class CoffeeStylesViewController: UIViewController {
             if let destinationVC = segue.destination as? CoffeeSizeViewController {
                 destinationVC.coffees = coffees!
                 destinationVC.chosenCoffee = chosenCoffee!
+                destinationVC.coffeeOrder = coffeeOrder
             }
         }
     }
@@ -66,6 +68,7 @@ extension CoffeeStylesViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         chosenCoffee = coffees.types[indexPath.row]
         if chosenCoffee != nil {
+            coffeeOrder.type = chosenCoffee!.id
             performSegue(withIdentifier: "StyleToSize", sender: nil)
         }
     }

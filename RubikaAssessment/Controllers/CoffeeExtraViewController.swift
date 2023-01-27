@@ -13,6 +13,7 @@ class CoffeeExtraViewController: UIViewController {
     
     var coffees: CoffeeServiceDataModel!
     var chosenCoffee: CoffeeType!
+    var coffeeOrder: CoffeeOrder!
     
     var selectedIndex = -1
         
@@ -21,8 +22,11 @@ class CoffeeExtraViewController: UIViewController {
 
         extraTableView.delegate = self
         extraTableView.dataSource = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(extraItemSelected(notification: )), name: NSNotification.Name("extraItem"), object: nil)
     }
     
+    //MARK: - Funcs
     func getExtraItem(for id: String) -> CoffeeExtra? {
         for item in coffees.extras {
             if item.id == id {
@@ -40,6 +44,13 @@ class CoffeeExtraViewController: UIViewController {
         } else {
             return UIImage(systemName: "photo.on.rectangle.fill")!
         }
+    }
+    
+    @objc func extraItemSelected(notification: NSNotification) {
+        guard let data = notification.userInfo as? [String: String] else { return }
+        let orderData = coffeeOrder.extra ?? [String: String]()
+        let result = data.merging(orderData, uniquingKeysWith: { (first, _) in first })
+        coffeeOrder.extra = result
     }
 }
 

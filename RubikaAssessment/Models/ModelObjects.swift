@@ -25,3 +25,9 @@ struct MagicNumbers {
     static var tableViewCellHight: CGFloat = 100
     static var embededTableViewCellHight: CGFloat = 50
 }
+
+struct CoffeeOrder: Codable {
+    var type: String
+    var size: String
+    var extra: [String: String]?
+}

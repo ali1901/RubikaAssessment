@@ -39,6 +39,10 @@ class ExtraTableViewCell: UITableViewCell {
         tableView.backgroundColor = .clear
         tableView.register(EmbededTableViewCell.self, forCellReuseIdentifier: "cell")
      }
+    
+    private func postNotification(with data: [String: String]) {
+        NotificationCenter.default.post(name: NSNotification.Name("extraItem"), object: nil, userInfo: data)
+    }
 }
 
 extension ExtraTableViewCell: UITableViewDelegate, UITableViewDataSource {
@@ -60,9 +64,9 @@ extension ExtraTableViewCell: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! EmbededTableViewCell
-        let x = cell.titleLabel.text
-        print(x ?? "")
+        let itemName = coffeeExtra?.name
+        let itemID = coffeeExtra?.subselections[indexPath.row].id
+        postNotification(with: [itemName ?? "" : itemID ?? ""])
         selectedItem = indexPath.row
         tableView.reloadData()
     }
