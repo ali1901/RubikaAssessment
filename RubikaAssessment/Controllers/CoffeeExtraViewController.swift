@@ -10,6 +10,7 @@ import UIKit
 class CoffeeExtraViewController: UIViewController {
 
     @IBOutlet weak var extraTableView: UITableView!
+    @IBOutlet weak var confirmBtn: UIButton!
     
     var coffees: CoffeeServiceDataModel!
     var chosenCoffee: CoffeeType!
@@ -23,11 +24,33 @@ class CoffeeExtraViewController: UIViewController {
         extraTableView.delegate = self
         extraTableView.dataSource = self
         
+        setupConfirmBtn()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(extraItemSelected(notification: )), name: NSNotification.Name("extraItem"), object: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ExtrasToOrder" {
+            if let destination = segue.destination as? OrderViewController {
+                destination.coffees = coffees!
+                destination.chosenCoffee = chosenCoffee!
+                destination.coffeeOrder = coffeeOrder
+            }
+        }
+    }
+    
     //MARK: - Funcs
-    func getExtraItem(for id: String) -> CoffeeExtra? {
+    private func setupConfirmBtn() {
+        confirmBtn.tintColor = .white
+        confirmBtn.layer.cornerRadius = MagicNumbers.tableViewCornerRadios
+        confirmBtn.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5).cgColor
+        confirmBtn.layer.shadowOffset = CGSize(width: 0, height: 10)
+        confirmBtn.layer.shadowOpacity = 10.0
+        confirmBtn.layer.shadowRadius = 10.0
+        confirmBtn.layer.masksToBounds = false
+    }
+    
+    private func getExtraItem(for id: String) -> CoffeeExtra? {
         for item in coffees.extras {
             if item.id == id {
                 return item
@@ -51,6 +74,11 @@ class CoffeeExtraViewController: UIViewController {
         let orderData = coffeeOrder.extra ?? [String: String]()
         let result = data.merging(orderData, uniquingKeysWith: { (first, _) in first })
         coffeeOrder.extra = result
+    }
+    
+    //MARK: - IBActions
+    @IBAction func confirmBtnTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "ExtrasToOrder", sender: nil)
     }
 }
 
