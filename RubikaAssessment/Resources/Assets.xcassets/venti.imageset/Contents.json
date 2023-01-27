@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "venti.png",
+      "filename" : "venti@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "venti@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "venti@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
